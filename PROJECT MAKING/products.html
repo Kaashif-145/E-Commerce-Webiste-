@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products PrimoGadgets</title>
+    <link rel="icon" type="image/x-icon" href="logo.jpeg">
+    <link rel="stylesheet" href="sstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+           body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Background For wesbite.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            color: #fffdfd;
+        }
+
+        .nav_menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav_menu .icons {
+            display: flex;
+            margin-left: 15px;
+        }
+
+        .nav_menu .icons li {
+            margin: 0 10px;
+        }
+
+        .nav_menu .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .nav_menu li {
+            list-style: none;
+        }
+
+        .nav_menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+
+        .nav_menu .icons a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .nav_menu .icons a:hover {
+            color: #007BFF;
+        }
+header {
+    background-image: url('Background For website.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center; 
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1,
+header p {
+    position: relative; 
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.9); 
+}
+header::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 0; 
+}
+        section {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); 
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .featured.products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product p {
+            color: #007BFF;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .product del {
+            color: #999;
+            font-size: 14px;
+        }
+        .product code {
+            display: block;
+            margin-top: 5px;
+            color: #28a745;
+        }
+        .product iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+            margin-top: 10px;
+        }
+        .product .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .product .btn:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: left;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .footer-section {
+            margin: 10px;
+        }
+        .footer-section h3 {
+            margin-top: 0;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+        .footer-section ul li a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav_menu">
+            <div class="icons">
+                <li><a href="Registration.html" title="Register"><i class="fas fa-user-plus"></i></a></li>
+                <li><a href="login.html" title="login"><i class="fas fa-user"></i></a></li>
+            </div>
+            <div class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <header>
+        <h1>Products</h1>
+    </header>
+    <br>
+    <br>
+    <section class="product-list">
+        <div class="product">
+            <img src="IPHONE_13.jpeg" alt="Apple iPhone 13">
+            <h3>Apple iPhone 13</h3>
+            <p class="price">₹34,000 <del>₹51,000</del> <code>20% discount</code></p>
+            <a href="Product 1.html" class="btn">View Details</a>
+        </div>
+        <div class="product">
+            <img src="Samsun p2.webp" alt="Samsung S24 Ultra">
+            <h3>Samsung S24 Ultra</h3>
+            <p class="price">₹76,000 <del>₹1,06,000</del> <code>40% discount</code></p>
+            <a href="Product 2.html" class="btn">View Details</a>
+        </div>
+        <div class="product">
+            <img src="APPLE VR headset.png" alt="Apple Vision Pro">
+            <h3>Apple Vision Pro</h3>
+            <p class="price">₹3,36,000 <del>₹4,03,200</del> <code>20% discount</code></p>
+            <a href="Product 3.html" class="btn">View Details</a>
+        </div>
+        <div class="product">
+            <img src="open-share.jpg" alt="1+ Open">
+            <h3>1+ Open</h3>
+            <p class="price">₹1,26,000 <del>₹1,89,000</del> <code>50% discount</code></p>
+            <a href="Product 4.html" class="btn">View Details</a>
+        </div>
+        <div class="product">
+            <img src="Google pixel.jpg" alt="Google Pixel">
+            <h3>Google Pixel</h3>
+            <p class="price">₹84,000 <del>₹1,26,000</del> <code>50% discount</code></p>
+            <a href="Product 5.html" class="btn">View Details</a>
+        </div>
+        <div class="product">
+            <img src="asus.jpg" alt="Asus Rog 6 Pro">
+            <h3>Asus Rog 6 Pro</h3>
+            <p class="price">₹1,70,000  <del>₹2,55,000</del> <code>50% discount</code></p>
+            <a href="Product 6.html" class="btn">View Details</a>
+        </div>
+        <div class="product">
+            <img src="Razer blade 16 advance.jpg" alt="Razer Blade 16 Advance">
+            <h3>Razer Blade 16 Advance</h3>
+            <p class="price">₹1,50,000  <del>₹2,02,500</del> <code>35% discount</code></p>
+            <a href="Product 7.html" class="btn">View Details</a>
+        </div>
+        <div class="product">
+            <img src="Mac Book.jpg" alt="MAC BOOK 16 PRO">
+            <h3>MAC BOOK 16 pro</h3>
+            <p class="price">₹8,00,000 <del>₹12,00,000</del> <code>50% discount</code></p>
+            <a href="Product 8.html" class="btn">View Details</a>
+        </div>
+        <div class="product">
+            <img src="Galaxy book 4.jpg" alt="Galaxy Book 4">
+            <h3>Galaxy Book 4</h3>
+            <p class="price">₹2,10,000  <del>₹3,15,000</del> <code>50% discount</code></p>
+            <a href="Product 9.html" class="btn">View Details</a>
+        </div>
+        <div class="product">
+            <img src="Ipad pro.jpg" alt="iPad PRO">
+            <h3>iPad PRO</h3>
+            <p class="price">₹1,20,000  <del>₹1,50,000</del> <code>25% discount</code></p>
+            <a href="Product 10.html" class="btn">View Details</a>
+        </div>
+        <div class="product">
+            <img src="Galaxy tab s9 ultra.jpg" alt="Galaxy Tab S9 Ultra">
+            <h3>Galaxy Tab S9 Ultra</h3>
+            <p class="price">₹1,25,000  <del>₹1,56,250</del> <code>25% discount</code></p>
+            <a href="Product 11.html" class="btn">View Details</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>PrimoGadgets</h2>
+                <p>Welcome to PrimoGadgets, your ultimate destination for the latest phones and laptops. We’re committed to bringing you top-quality products and exceptional service to help you find the perfect tech solutions.</p>
+            </div>
+            
+            <div class="footer-section customer-service">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="/order-tracking">Order Tracking</a></li>
+                    <li><a href="/return-policy">Return Policy</a></li>
+                    <li><a href="/faqs">FAQs</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/shop-phones">Shop Phones</a></li>
+                    <li><a href="/shop-laptops">Shop Laptops</a></li>
+                    <li><a href="/best-sellers">Best Sellers</a></li>
+                    <li><a href="/new-arrivals">New Arrivals</a></li>
+                    <li><a href="/special-offers">Special Offers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/YourPage" target="_blank">Facebook</a><br>
+                <a href="https://twitter.com/YourProfile" target="_blank">Twitter</a><br>
+                <a href="https://www.instagram.com/YourProfile" target="_blank">Instagram</a><br>
+                <a href="https://www.linkedin.com/company/YourProfile" target="_blank">LinkedIn</a><br>
+            </div>
+            
+            <div class="footer-section newsletter">
+                <h3>Newsletter Signup</h3>
+                <form action="/subscribe" method="post">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            
+            <div class="footer-section company-info">
+                <h3>Company Info</h3>
+                <p>PrimoGadgets</p>
+                <p>Jayanagar, Bangalore</p>
+                <p>Karnataka, Bangalore, 560011</p>
+                <p>Phone: +91 9541380669</p>
+                <p>Email: <a href="mailto:support@primogadgets.com">support@primogadgets.com</a></p>
+            </div>
+            
+            <div class="footer-section legal">
+                <ul>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/terms-of-service">Terms of Service</a></li>
+                    <li><a href="/accessibility">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 PrimoGadgets. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
